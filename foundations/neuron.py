@@ -13,11 +13,11 @@ class Solution:
         # Sigmoid: σ(z) = 1 / (1 + exp(-z))
         # ReLU: max(0, z)
         # return round(your_answer, 5)
-        z=np.matmul(x,w)+b
+        z = np.matmul(x, w) + b
         if activation == "sigmoid":
-            a=1/(1+np.exp(-z))
+            a = 1 / (1 + np.exp(-z))
         elif activation == "relu":
-            a=max(0.0,z)
+            a = max(0.0, z)
         else:
             raise ValueError("Unknown Activation")
-        return round(a,5)
+        return round(float(a), 5)
