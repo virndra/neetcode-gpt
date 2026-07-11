@@ -20,4 +20,4 @@ class Solution:
             a = max(0.0, z)
         else:
             raise ValueError("Unknown Activation")
-        return round(float(a), 5)
+        return round(a,5)
